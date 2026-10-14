@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Queen Etornam's BeIT Foundation | Launching Soon</title>
+  <meta name="description" content="Queen Etornam's BeIT Foundation website is launching soon.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="bg-glow" aria-hidden="true"></div>
+
+  <main class="wrapper">
+    <header class="brand">
+      <div class="crown" aria-hidden="true">
+        <svg viewBox="0 0 64 40" width="64" height="40">
+          <path d="M4 34 L8 10 L22 22 L32 4 L42 22 L56 10 L60 34 Z" fill="currentColor"/>
+          <rect x="4" y="34" width="56" height="5" rx="2" fill="currentColor"/>
+        </svg>
+      </div>
+      <p class="eyebrow">Something beautiful is coming</p>
+      <h1>Queen Etornam's <span>BeIT</span> Foundation</h1>
+      <p class="tagline">Our new website launches in</p>
+    </header>
+
+    <section id="countdown" class="countdown" aria-live="polite">
+      <div class="unit">
+        <span class="num" id="hours">05</span>
+        <span class="label">Hours</span>
+      </div>
+      <span class="sep" aria-hidden="true">:</span>
+      <div class="unit">
+        <span class="num" id="minutes">00</span>
+        <span class="label">Minutes</span>
+      </div>
+      <span class="sep" aria-hidden="true">:</span>
+      <div class="unit">
+        <span class="num" id="seconds">00</span>
+        <span class="label">Seconds</span>
+      </div>
+    </section>
+
+    <div class="progress" aria-hidden="true">
+      <div class="progress-bar" id="progressBar"></div>
+    </div>
+    <p class="launch-time" id="launchTime"></p>
+
+    <section id="launched" class="launched" hidden>
+      <h2>We're live! 🎉</h2>
+      <p>Thank you for waiting with us. Welcome to the BeIT Foundation.</p>
+      <a href="#" class="btn">Enter the website</a>
+    </section>
+
+    <form class="notify" id="notifyForm">
+      <label for="email">Be the first to know when we go live</label>
+      <div class="notify-row">
+        <input type="email" id="email" placeholder="Your email address" required>
+        <button type="submit" class="btn">Notify me</button>
+      </div>
+      <p class="form-msg" id="formMsg" role="status"></p>
+    </form>
+  </main>
+
+  <footer class="footer">
+    &copy; <span id="year"></span> Queen Etornam's BeIT Foundation. All rights reserved.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
